@@ -8,7 +8,7 @@ export default defineConfig({
         react(),
         VitePWA({
             registerType: "autoUpdate",
-            includeAssets: ["./src/assets/img/icon-macaca.png"],
+            includeAssets: ["icon-macaca.png"],
             manifest: {
                 name: "Mangrove Carbon Calculator",
                 short_name: "Macaca",
