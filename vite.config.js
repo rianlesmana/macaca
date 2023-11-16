@@ -8,6 +8,24 @@ export default defineConfig({
         react(),
         VitePWA({
             registerType: "autoUpdate",
+            includeAssets: ["./src/assets/img/icon-macaca.png"],
+            manifest: {
+                name: "Mangrove Carbon Calculator",
+                short_name: "Macaca",
+                description: "Macaca Apps",
+                icons: [
+                    {
+                        src: "./src/assets/img/icon-macaca.png",
+                        sizes: "144x144",
+                        type: "image/png",
+                        purpose: "favicon",
+                    },
+                ],
+                display: "standalone",
+                scope: "/",
+                start_url: "/",
+                orientation: "portrait",
+            },
         }),
     ],
 });
@@ -22,7 +40,7 @@ export default defineConfig({
 //         icons: [
 //             {
 //                 src: "./src/assets/img/icon-macaca.png",
-//                 sizes: "144px",
+//                 sizes: "144x144",
 //                 type: "image/png",
 //                 purpose: "favicon",
 //             },
