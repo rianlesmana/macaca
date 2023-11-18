@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function Button({
     children,
-    bgButton = "bg-mrv-sky-100",
+    bgButton = 'bg-mrv-sky-100',
     ...props
 }) {
     return (

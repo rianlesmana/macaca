@@ -10,10 +10,14 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "excel-export": "^0.5.1",
+        "file-server": "^2.2.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.11.0",
-        "react-router-dom": "^6.18.0"
+        "react-router-dom": "^6.18.0",
+        "sheetjs-style": "^0.15.8",
+        "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
     },
     "devDependencies": {
         "@types/react": "^18.2.15",

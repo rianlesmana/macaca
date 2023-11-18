@@ -5,15 +5,15 @@ export default function Input({
     children,
     unit,
     wide,
-    wUnit = "w-1/6",
+    wUnit = 'w-1/6',
     ...props
 }) {
     return (
-        <div className="flex flex-col mb-4">
+        <div className='flex flex-col mb-4'>
             <label className={`font-poppins text-white text-sm mb-2`}>
                 {children}
             </label>
-            <div className="flex">
+            <div className='flex'>
                 <input
                     className={`${wide} rounded-tl-md rounded-bl-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md`}
                     type={type}

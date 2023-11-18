@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 function CardCalculator({ children }) {
-    return <div className="p-5">{children}</div>;
+    return <div className='p-5'>{children}</div>;
 }
 
 function CardTitle({
     wide,
-    border = "border-x-4 border-t-4 border-mrv-sky-200",
+    border = 'border-x-4 border-t-4 border-mrv-sky-200',
     children,
 }) {
     return (
@@ -20,7 +20,7 @@ function CardTitle({
 // eslint-disable-next-line react/prop-types
 function CardContent({ children }) {
     return (
-        <div className="bg-gradient-to-r from-mrv-sky-200 to-mrv-green w-80 rounded-md py-5 px-3 shadow-md shadow-slate-400 transition-all duration-100">
+        <div className='bg-gradient-to-r from-mrv-sky-200 to-mrv-green w-80 rounded-md py-5 px-3 shadow-md shadow-slate-400 transition-all duration-100'>
             {children}
         </div>
     );
