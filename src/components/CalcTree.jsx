@@ -250,7 +250,6 @@ export default function CalcTree() {
     const sumDataCarbon = () => {
         const data = dataCarbon;
         const sum = data.reduce((a, b) => Number(a) + Number(b), 0);
-        console.log(sum);
         setCarbonArea({
             ...carbonArea,
             totalCarbon: sum.toFixed(6),
