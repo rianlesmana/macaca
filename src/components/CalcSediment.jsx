@@ -31,6 +31,7 @@ export default function CalcSediment() {
 
     const onDensity = (e) => {
         setDensity(e.target.value);
+        document.getElementById('soilDensity').reset();
     };
 
     const onDataSediment = (e) => {
@@ -150,6 +151,7 @@ export default function CalcSediment() {
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
                                         type='text'
                                         name='stationCode'
+                                        value={dataSediment.stationCode}
                                         placeholder='Input the stationCode'
                                     />
                                 </div>
