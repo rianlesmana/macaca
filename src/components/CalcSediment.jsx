@@ -433,7 +433,12 @@ export default function CalcSediment() {
                                 <Button bgButton='bg-mrv-red' type='submit'>
                                     Calculate
                                 </Button>
-                                <Button bgButton='bg-mrv-red'>Reset</Button>
+                                <Button
+                                    bgButton='bg-mrv-red'
+                                    onClick={() => localStorage.clear()}
+                                >
+                                    Reset
+                                </Button>
                             </div>
                         </form>
                         <div className='mt-4 flex flex-col'>
