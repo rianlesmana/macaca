@@ -57,7 +57,7 @@ export default function CalcSediment() {
         e.preventDefault();
         const soilDensityValue = soilCarbonDensity(
             Number(dataSediment.bulkDensity),
-            Number(dataSediment.cOrganic),
+            parseFloat(dataSediment.bulkDensity),
         );
         setDataSediment({
             ...dataSediment,
@@ -270,7 +270,7 @@ export default function CalcSediment() {
                                     wide='w-5/6'
                                     unit='g/m^3'
                                     wUnit='2/6'
-                                    type='number'
+                                    type='text'
                                     name='cOrganic'
                                     placeholder='Input % C Organic'
                                 >

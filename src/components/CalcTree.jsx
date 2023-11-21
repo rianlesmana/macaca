@@ -595,6 +595,12 @@ export default function CalcTree() {
                             >
                                 Calculate
                             </Button>
+                            <Button
+                                bgButton='bg-mrv-red ml-2'
+                                onClick={clearData}
+                            >
+                                Reset
+                            </Button>
                         </div>
 
                         <div className='flex flex-col'>

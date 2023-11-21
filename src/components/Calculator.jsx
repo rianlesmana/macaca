@@ -27,7 +27,7 @@ export default function Calculator() {
                     className='bg-gradient-to-r from-mrv-sky-200 to-mrv-green w-28 flex flex-col justify-evenly items-center'
                 >
                     <p className='font-poppins font-semibold text-white py-4 text-sm tracking-wider'>
-                        Biomass
+                        Tree
                     </p>
                     <img src={btnBiomass} alt='biomass' className='w-full' />
                 </button>
