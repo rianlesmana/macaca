@@ -230,7 +230,7 @@ export default function CalcSediment() {
                                     <Button bgButton='bg-mrv-red' type='submit'>
                                         Calculate
                                     </Button>
-                                    <Button
+                                    {/* <Button
                                         bgButton='bg-mrv-red'
                                         onClick={() =>
                                             document
@@ -239,7 +239,7 @@ export default function CalcSediment() {
                                         }
                                     >
                                         Reset
-                                    </Button>
+                                    </Button> */}
                                 </div>
                             </form>
                             <div className='mt-4 flex flex-col'>
@@ -313,7 +313,7 @@ export default function CalcSediment() {
                                     <Button bgButton='bg-mrv-red' type='submit'>
                                         Calculate
                                     </Button>
-                                    <Button
+                                    {/* <Button
                                         bgButton='bg-mrv-red'
                                         onClick={(e) => {
                                             e.preventDefault();
@@ -323,7 +323,7 @@ export default function CalcSediment() {
                                         }}
                                     >
                                         Reset
-                                    </Button>
+                                    </Button> */}
                                 </div>
                             </form>
                             <div className='mt-4 flex flex-col'>
