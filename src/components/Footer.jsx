@@ -19,11 +19,10 @@ export default function Footer() {
                 <p className='text-sm'>
                     jl. Raya Palka Km. 3 Sindangsari, Pabuaran, Kab. Serang
                     Provinsi Banten. <br />
-                    Tel. +62 89 3489349038 <br />
-                    Fax. +62 321 934692023 <br />
+                    Tel. +62 895-3558-82238 <br />
                     E-mail:{' '}
                     <span className='text-sky-800 underline'>
-                        macaca@gmail.com
+                        fadilmsubhan733@gmail.com
                     </span>
                 </p>
             </div>

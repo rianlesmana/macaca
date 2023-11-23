@@ -283,7 +283,7 @@ export default function CalcSediment() {
                                 >
                                     Bulk Density
                                 </Input>
-                                <Input
+                                {/* <Input
                                     wide='w-5/6'
                                     unit='g/m^3'
                                     wUnit='2/6'
@@ -292,7 +292,23 @@ export default function CalcSediment() {
                                     placeholder='Input % C Organic'
                                 >
                                     % C Organic
-                                </Input>
+                                </Input> */}
+                                <div className='flex flex-col mb-3'>
+                                    <label className='font-poppins text-white text-sm mb-2'>
+                                        % C Organic
+                                    </label>
+                                    <input
+                                        className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
+                                        type='text'
+                                        name='cOrganic'
+                                        placeholder='Input % C Organic'
+                                        value={
+                                            dataSediment.cOrganic != 0
+                                                ? dataSediment.cOrganic
+                                                : ''
+                                        }
+                                    />
+                                </div>
                                 <div className='flex gap-3'>
                                     <Button bgButton='bg-mrv-red' type='submit'>
                                         Calculate

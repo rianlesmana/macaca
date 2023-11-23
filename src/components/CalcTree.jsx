@@ -408,7 +408,7 @@ export default function CalcTree() {
                                 value={result.agb != null ? result.agb : ''}
                                 placeholder='Input value AGB'
                             >
-                                Aboce Ground Biomass (AGB)
+                                Above Ground Biomass (AGB)
                             </Input>
                             <Input
                                 wide='w-5/6'
