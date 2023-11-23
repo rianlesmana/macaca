@@ -163,6 +163,7 @@ export default function CalcSediment() {
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
                                         type='number'
                                         name='numberOfLayer'
+                                        value={dataSediment.numberOfLayer}
                                         placeholder='Input number of layer'
                                     />
                                 </div>
@@ -175,6 +176,7 @@ export default function CalcSediment() {
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
                                         type='number'
                                         name='partOfLayer'
+                                        value={dataSediment.partOfLayer}
                                         placeholder='input the selected layer'
                                     />
                                     {/* <select
@@ -194,6 +196,7 @@ export default function CalcSediment() {
                                     unit='g'
                                     type='number'
                                     name='dryWeight'
+                                    value={dataSediment.dryWeight}
                                     placeholder='Input Dry Weight'
                                 >
                                     Dry Weight
@@ -207,6 +210,7 @@ export default function CalcSediment() {
                                         unit='cm'
                                         type='number'
                                         name='radius'
+                                        value={dataSediment.radius}
                                         placeholder='Input Tube Radius'
                                     >
                                         Radius (r<sup>2</sup>)
@@ -216,6 +220,7 @@ export default function CalcSediment() {
                                         unit='cm'
                                         type='number'
                                         name='tubeHeight'
+                                        value={dataSediment.tubeHeight}
                                         placeholder='Input Tube Height'
                                     >
                                         Tube Height
@@ -257,7 +262,7 @@ export default function CalcSediment() {
                                 onSubmit={calculateSoilDensity}
                                 onChange={onDataSediment}
                             >
-                                <div className='flex flex-col mb-3'>
+                                {/* <div className='flex flex-col mb-3'>
                                     <label className='font-poppins text-white text-sm mb-2'>
                                         Bulk Density
                                     </label>
@@ -267,7 +272,17 @@ export default function CalcSediment() {
                                         value={dataSediment.bulkDensity}
                                         name='bulkDensity'
                                     />
-                                </div>
+                                </div> */}
+                                <Input
+                                    wide='w-5/6'
+                                    unit='g/m^3'
+                                    wUnit='2/6'
+                                    type='number'
+                                    name='bulkDensity'
+                                    value={dataSediment.bulkDensity}
+                                >
+                                    Bulk Density
+                                </Input>
                                 <Input
                                     wide='w-5/6'
                                     unit='g/m^3'

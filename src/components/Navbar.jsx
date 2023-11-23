@@ -5,7 +5,7 @@ import macacaLogo from '../assets/img/logo-macaca.png';
 
 const navMenu = [
     {
-        path: '#home',
+        path: '/',
         name: 'Home',
     },
     {
@@ -17,12 +17,8 @@ const navMenu = [
         name: 'Tutorial',
     },
     {
-        path: '#about',
+        path: '/about',
         name: 'About',
-    },
-    {
-        path: '#',
-        name: 'Language',
     },
 ];
 
