@@ -26,7 +26,7 @@ export default function About() {
                         <h2 className='font-semibold text-slate-800 mb-1 font-poppins'>
                             Background
                         </h2>
-                        <p className=' text-justify'>
+                        <p className=' text-justify indent-12'>
                             Mangroves are one of the deep coastal ecosystems
                             that have an important role in mitigating global
                             climate change. Mangroves are part of the parameters
@@ -36,30 +36,35 @@ export default function About() {
                             al. 2016). Every 1 ha of mangrove forest can store
                             4x more carbon than terrestrial forests, and absorb
                             20x more CO2 emissions than terrestrial tropical
-                            forests (Donato et al. 2012 dalam Yaqin et al.
-                            2022). The absorbed carbon is stored in mangrove
-                            biomass, namely in several parts such as stems,
-                            leaves, and sediments. Menurut Bachmid et al. (2018)
-                            Mangroves have an optimal function in absorption
-                            reaching 77.9% stored in stems, leaves, and
-                            sediments. Menurut Kauffman et al. (2012) The
-                            largest mangrove carbon storage is found in
-                            sediment. Mangrove carbon stores are mostly
-                            allocated proportionally underground or sedimentary.
-                            The determination of stored carbon is done using
-                            conversion rates. The carbon contained in organic
-                            matter is 46%-50%, so the estimated amount of carbon
-                            stored is by multiplying 46%-50% or 0.46-0.5 by the
-                            carbon absorption biomass (Hairiah dan Rahayu 2007).
-                            The carbon absorption biomass is obtained through
+                            forests (Donato et al. 2012 in Yaqin et al. 2022).
+                            The absorbed carbon is stored in mangrove biomass,
+                            namely in several parts such as stems, leaves, and
+                            sediments. According Bachmid et al. (2018) Mangroves
+                            have an optimal function in absorption reaching
+                            77.9% stored in stems, leaves, and sediments.
+                            Menurut Kauffman et al. (2012) The largest mangrove
+                            carbon storage is found in sediment. Mangrove carbon
+                            stores are mostly allocated proportionally
+                            underground or sedimentary. The determination of
+                            stored carbon is done using conversion rates. The
+                            carbon contained in organic matter is 46%-50%, so
+                            the estimated amount of carbon stored is by
+                            multiplying 46%-50% or 0.46-0.5 by the carbon
+                            absorption biomass (Hairiah dan Rahayu 2007). The
+                            carbon absorption biomass is obtained through
                             mangrove biomass analysis, namely above-ground
                             biomass (AGB) and below-ground biomass (BGB).
                             Biomass analysis is carried out by the allometric
                             method, which requires measurement parameters,
                             namely diameter at breast height (DBH) and tree
-                            height (H). Estimation of carbon storage in mangrove
-                            trees is also needed to measure sediment. Analysis
-                            of carbon content in sediments is carried out using
+                            height (H).
+                        </p>
+                        <br />
+
+                        <p className='text-justify indent-12'>
+                            Estimation of carbon storage in mangrove trees is
+                            also needed to measure sediment. Analysis of carbon
+                            content in sediments is carried out using
                             graphimetric methods for sediment weight
                             measurement. Menurut Badan Standarisasi Nasional
                             (2011) The initial process of calculating carbon
@@ -70,6 +75,9 @@ export default function About() {
                             in sediments can be carried out by multiplying the
                             depth of the soil, specific gravity, and the
                             percentage of organic carbon from the laboratory.
+                        </p>
+                        <br />
+                        <p className='text-justify indent-12'>
                             Selection of mangrove carbon measurement methods
                             that are inaccurate or not in accordance with the
                             conditions of mangrove locations can result in
@@ -91,6 +99,9 @@ export default function About() {
                             especially if it involves a lot of data, complex
                             mathematical formulas, or in-depth analysis methods
                             that have the potential for miscalculations.
+                        </p>
+                        <br />
+                        <p className='text-justify indent-12'>
                             Automatic calculations can be known using MAngrove
                             CArbon CAlculator (MACACA) software. MAngrove CArbon
                             CAlculator (MACACA) is software created to calculate

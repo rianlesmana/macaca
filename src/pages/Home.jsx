@@ -64,12 +64,12 @@ export default function Home() {
                                 <p className='text-justify font-poppins text-slate-50 text-sm'>
                                     Mangrove Carbon Calculator (MACACA) is a
                                     software created to calculate the estimated
-                                    amount of carbon sequestered and stored in
-                                    the upper biomass and lower biomass, as well
-                                    as carbon uptake stored in sediments. MACACA
-                                    is designed to facilitate data analysis in
-                                    the calculation of mangrove carbon in trees
-                                    and sediments.
+                                    amount of carbon sequestretions and stored
+                                    in the upper biomass and lower biomass, as
+                                    well as carbon biomass uptake stored in
+                                    sediments. MACACA is designed to facilitate
+                                    data analysis in the calculation of mangrove
+                                    carbon in trees and sediments.
                                 </p>
                                 <div className='flex flex-col gap-3 mt-12'>
                                     <textarea

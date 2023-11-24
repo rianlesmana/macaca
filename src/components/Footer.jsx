@@ -19,10 +19,10 @@ export default function Footer() {
                 <p className='text-sm'>
                     jl. Raya Palka Km. 3 Sindangsari, Pabuaran, Kab. Serang
                     Provinsi Banten. <br />
-                    Tel. +62 895-3558-82238 <br />
+                    Tel. +62 895 3558 82238 <br />
                     E-mail:{' '}
                     <span className='text-sky-800 underline'>
-                        fadilmsubhan733@gmail.com
+                        Official.macaca@gmail.com
                     </span>
                 </p>
             </div>
@@ -58,7 +58,7 @@ export default function Footer() {
                     rights to an image and it is not credited, or you do not
                     want it to appear on our site, please contact us at{' '}
                     <span className='text-sky-800 underline'>
-                        macaca@gmail.com
+                        Official.macaca@gmail.com
                     </span>
                 </p>
             </div>
