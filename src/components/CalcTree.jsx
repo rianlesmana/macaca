@@ -326,7 +326,7 @@ export default function CalcTree() {
                             </Input>
                             <Input
                                 wide='w-5/6'
-                                unit='cm'
+                                unit='m'
                                 type='number'
                                 name='height'
                                 placeholder='Input height of tree'
