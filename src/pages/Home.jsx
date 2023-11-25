@@ -2,7 +2,6 @@ import Navbar from '../components/Navbar';
 import bgHeader from '../assets/img/bg-top.png';
 import mangrove from '../assets/img/img-mangrove.png';
 import bgBot from '../assets/img/bg-down.png';
-import { BiCaretLeftCircle } from 'react-icons/bi';
 import Footer from '../components/Footer';
 import Calculator from '../components/Calculator';
 
@@ -40,9 +39,18 @@ export default function Home() {
                             tutorial here.
                         </span>
                     </h2>
-                    <div className='bg-mrv-sky-200 w-5/6 h-40 sm:h-60 md:w-4/6 md:h-80 lg:w-3/6 text-slate-100 text-6xl flex justify-center items-center'>
+                    {/* <div className='bg-mrv-sky-200 w-5/6 h-40 sm:h-60 md:w-4/6 md:h-80 lg:w-3/6 text-slate-100 text-6xl flex justify-center items-center'>
                         <BiCaretLeftCircle />
-                    </div>
+                    </div> */}
+                    <iframe
+                        // width='560'
+                        // height='315'
+                        src='https://www.youtube.com/embed/qlyD60M6jq8?si=cBlnhVj-R0IreNgu'
+                        title='YouTube video player'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                        allowfullscreen
+                        className='w-80 md:w-[30rem] lg:w-[42rem] h-44 md:h-[17rem] lg:h-96'
+                    ></iframe>
                 </div>
 
                 {/*============= About Us =============*/}
