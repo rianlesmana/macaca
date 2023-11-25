@@ -42,16 +42,16 @@ export default function About() {
                             sediments. According Bachmid et al. (2018) Mangroves
                             have an optimal function in absorption reaching
                             77.9% stored in stems, leaves, and sediments.
-                            Menurut Kauffman et al. (2012) The largest mangrove
-                            carbon storage is found in sediment. Mangrove carbon
-                            stores are mostly allocated proportionally
-                            underground or sedimentary. The determination of
-                            stored carbon is done using conversion rates. The
-                            carbon contained in organic matter is 46%-50%, so
-                            the estimated amount of carbon stored is by
-                            multiplying 46%-50% or 0.46-0.5 by the carbon
-                            absorption biomass (Hairiah dan Rahayu 2007). The
-                            carbon absorption biomass is obtained through
+                            According to Kauffman et al. (2012) The largest
+                            mangrove carbon storage is found in sediment.
+                            Mangrove carbon stores are mostly allocated
+                            proportionally underground or sedimentary. The
+                            determination of stored carbon is done using
+                            conversion rates. The carbon contained in organic
+                            matter is 46%-50%, so the estimated amount of carbon
+                            stored is by multiplying 46%-50% or 0.46-0.5 by the
+                            carbon absorption biomass (Hairiah dan Rahayu 2007).
+                            The carbon absorption biomass is obtained through
                             mangrove biomass analysis, namely above-ground
                             biomass (AGB) and below-ground biomass (BGB).
                             Biomass analysis is carried out by the allometric
@@ -66,15 +66,15 @@ export default function About() {
                             also needed to measure sediment. Analysis of carbon
                             content in sediments is carried out using
                             graphimetric methods for sediment weight
-                            measurement. Menurut Badan Standarisasi Nasional
-                            (2011) The initial process of calculating carbon
-                            content in sediments requires specific gravity data
-                            (bulk density) obtained from the division between
-                            dry weight and sample volume. So from these
-                            parameters, calculations related to organic carbon
-                            in sediments can be carried out by multiplying the
-                            depth of the soil, specific gravity, and the
-                            percentage of organic carbon from the laboratory.
+                            measurement. According to BSN (2011) The initial
+                            process of calculating carbon content in sediments
+                            requires specific gravity data (bulk density)
+                            obtained from the division between dry weight and
+                            sample volume. So from these parameters,
+                            calculations related to organic carbon in sediments
+                            can be carried out by multiplying the depth of the
+                            soil, specific gravity, and the percentage of
+                            organic carbon from the laboratory.
                         </p>
                         <br />
                         <p className='text-justify indent-12'>
