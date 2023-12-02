@@ -299,7 +299,7 @@ export default function CalcSediment() {
                                 </div> */}
                                 <Input
                                     wide='w-5/6'
-                                    unit='g/m^3'
+                                    unit='g/cm^3'
                                     wUnit='2/6'
                                     type='number'
                                     name='bulkDensity'

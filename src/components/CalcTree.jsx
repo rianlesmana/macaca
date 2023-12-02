@@ -328,7 +328,7 @@ export default function CalcTree() {
                                 unit='cm'
                                 type='text'
                                 name='diameter'
-                                placeholder='Input diamter of tree'
+                                placeholder='Input diameter of tree'
                                 required
                             >
                                 Diameter at Breast Height (DBH)
