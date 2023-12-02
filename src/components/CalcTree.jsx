@@ -88,8 +88,8 @@ export default function CalcTree() {
     const calCulateBiomass = (e) => {
         e.preventDefault();
         if (result.species == 'Avicennia alba') {
-            const agbValue = agbAvcAlba(Number(result.diameter));
-            const bgbValue = bgbAvcAlba(Number(result.diameter));
+            const agbValue = agbAvcAlba(parseFloat(result.diameter));
+            const bgbValue = bgbAvcAlba(parseFloat(result.diameter));
             setResult({
                 ...result,
                 agb: agbValue.toFixed(6),
@@ -98,8 +98,8 @@ export default function CalcTree() {
         }
 
         if (result.species == 'Avicennia marina') {
-            const agbValue = agbAvcMarina(Number(result.diameter));
-            const bgbValue = bgbAvcMarina(Number(result.diameter));
+            const agbValue = agbAvcMarina(parseFloat(result.diameter));
+            const bgbValue = bgbAvcMarina(parseFloat(result.diameter));
             setResult({
                 ...result,
                 agb: agbValue.toFixed(6),
@@ -108,8 +108,8 @@ export default function CalcTree() {
         }
 
         if (result.species == 'Avicennia officinalis') {
-            const agbValue = agbAvcOfficinalis(Number(result.diameter));
-            const bgbValue = bgbAvcOfficinalis(Number(result.diameter));
+            const agbValue = agbAvcOfficinalis(parseFloat(result.diameter));
+            const bgbValue = bgbAvcOfficinalis(parseFloat(result.diameter));
             setResult({
                 ...result,
                 agb: agbValue.toFixed(6),
@@ -118,8 +118,8 @@ export default function CalcTree() {
         }
 
         if (result.species == 'Bruguiera cylindrica') {
-            const agbValue = agbBrgCylindrica(Number(result.diameter));
-            const bgbValue = bgbBrgCylindrica(Number(result.diameter));
+            const agbValue = agbBrgCylindrica(parseFloat(result.diameter));
+            const bgbValue = bgbBrgCylindrica(parseFloat(result.diameter));
             setResult({
                 ...result,
                 agb: agbValue.toFixed(6),
@@ -128,8 +128,8 @@ export default function CalcTree() {
         }
 
         if (result.species == 'Rhizophora apiculata') {
-            const agbValue = agbRzpApiculata(Number(result.diameter));
-            const bgbValue = bgbRzpApiculata(Number(result.diameter));
+            const agbValue = agbRzpApiculata(parseFloat(result.diameter));
+            const bgbValue = bgbRzpApiculata(parseFloat(result.diameter));
             setResult({
                 ...result,
                 agb: agbValue.toFixed(6),
@@ -318,16 +318,19 @@ export default function CalcTree() {
                             <Input
                                 wide='w-5/6'
                                 unit='cm'
-                                type='number'
+                                type='text'
                                 name='diameter'
                                 placeholder='Input diamter of tree'
                             >
                                 Diameter at Breast Height (DBH)
+                                <span className='text-red-600 text-lg ml-1'>
+                                    *
+                                </span>
                             </Input>
                             <Input
                                 wide='w-5/6'
                                 unit='m'
-                                type='number'
+                                type='text'
                                 name='height'
                                 placeholder='Input height of tree'
                             >
