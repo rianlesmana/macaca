@@ -5,20 +5,12 @@ import macacaLogo from '../assets/img/logo-macaca.png';
 
 const navMenu = [
     {
-        path: '/',
-        name: 'Home',
-    },
-    {
         path: '#calculator',
         name: 'Calculator',
     },
     {
         path: '#tutorial',
         name: 'Tutorial',
-    },
-    {
-        path: '/about',
-        name: 'About',
     },
 ];
 
@@ -49,6 +41,12 @@ export default function Navbar() {
                     } bg-white h-screen w-screen sm:w-96 z-20 top-0 right-0 shadow-md`}
                 >
                     <div className='flex flex-col justify-center items-center gap-3 mt-14'>
+                        <Link
+                            className='bg-slate-50 active:text-white active:bg-sky-200 flex justify-center items-center font-poppins font-semibold text-sm w-48 h-10 rounded-md shadow-sm border-b-4 border-b-transparent hover:border-b-mrv-sky-200 transition-all duration-500'
+                            to='/'
+                        >
+                            Home
+                        </Link>
                         {navMenu.map((value, index) => {
                             return (
                                 <li key={index}>
@@ -69,6 +67,12 @@ export default function Navbar() {
                                 </li>
                             );
                         })}
+                        <Link
+                            className='bg-slate-50 active:text-white active:bg-sky-200 flex justify-center items-center font-poppins font-semibold text-sm w-48 h-10 rounded-md shadow-sm border-b-4 border-b-transparent hover:border-b-mrv-sky-200 transition-all duration-500'
+                            to='/about'
+                        >
+                            About
+                        </Link>
                         <li>
                             <Link
                                 onClick={navCondition}
@@ -84,6 +88,12 @@ export default function Navbar() {
 
             {/** Menu Desktop & Tablet */}
             <ul className='md:flex items-center hidden'>
+                <Link
+                    className='inline-block py-5 px-6 border-b-4 border-b-transparent hover:border-b-mrv-sky-200 hover:bg-slate-50 font-poppins text-sm font-semibold transition-all duration-300'
+                    to='/'
+                >
+                    Home
+                </Link>
                 {navMenu.map((value, index) => (
                     <li key={index}>
                         {/* <Link
@@ -101,6 +111,12 @@ export default function Navbar() {
                         </a>
                     </li>
                 ))}
+                <Link
+                    className='inline-block py-5 px-6 border-b-4 border-b-transparent hover:border-b-mrv-sky-200 hover:bg-slate-50 font-poppins text-sm font-semibold transition-all duration-300'
+                    to='/about'
+                >
+                    About
+                </Link>
             </ul>
         </nav>
     );
