@@ -146,6 +146,9 @@ export default function CalcSediment() {
                                 <div className='flex flex-col mb-3'>
                                     <label className='font-poppins text-white text-sm mb-2'>
                                         Station code
+                                        <span className='text-red-600 text-lg ml-1'>
+                                            *
+                                        </span>
                                     </label>
                                     <input
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
@@ -153,11 +156,15 @@ export default function CalcSediment() {
                                         name='stationCode'
                                         value={dataSediment.stationCode}
                                         placeholder='Input the stationCode'
+                                        required
                                     />
                                 </div>
                                 <div className='flex flex-col mb-3'>
                                     <label className='font-poppins text-white text-sm mb-2'>
                                         Number of layer
+                                        <span className='text-red-600 text-lg ml-1'>
+                                            *
+                                        </span>
                                     </label>
                                     <input
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
@@ -165,12 +172,16 @@ export default function CalcSediment() {
                                         name='numberOfLayer'
                                         value={dataSediment.numberOfLayer}
                                         placeholder='Input number of layer'
+                                        required
                                     />
                                 </div>
 
                                 <div className='flex flex-col mb-3'>
                                     <label className='font-poppins text-white text-sm mb-2'>
                                         Select Layer
+                                        <span className='text-red-600 text-lg ml-1'>
+                                            *
+                                        </span>
                                     </label>
                                     <input
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
@@ -178,6 +189,7 @@ export default function CalcSediment() {
                                         name='partOfLayer'
                                         value={dataSediment.partOfLayer}
                                         placeholder='input the selected layer'
+                                        required
                                     />
                                     {/* <select
                                         className='p-1 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-300 font-poppins text-sm shadow-md'
@@ -198,8 +210,12 @@ export default function CalcSediment() {
                                     name='dryWeight'
                                     value={dataSediment.dryWeight}
                                     placeholder='Input Dry Weight'
+                                    required
                                 >
                                     Dry Weight
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </Input>
                                 <div>
                                     <h3 className='font-semibold antialiased tracking-wider font-poppins text-white text-sm mb-2'>
@@ -212,8 +228,12 @@ export default function CalcSediment() {
                                         name='radius'
                                         value={dataSediment.radius}
                                         placeholder='Input Tube Radius'
+                                        required
                                     >
-                                        Radius (r<sup>2</sup>)
+                                        Tube Diameter
+                                        <span className='text-red-600 text-lg ml-1'>
+                                            *
+                                        </span>
                                     </Input>
                                     <Input
                                         wide='w-5/6'
@@ -222,8 +242,12 @@ export default function CalcSediment() {
                                         name='tubeHeight'
                                         value={dataSediment.tubeHeight}
                                         placeholder='Input Tube Height'
+                                        required
                                     >
                                         Tube Height
+                                        <span className='text-red-600 text-lg ml-1'>
+                                            *
+                                        </span>
                                     </Input>
                                 </div>
                                 <div className='flex gap-3'>
@@ -280,8 +304,12 @@ export default function CalcSediment() {
                                     type='number'
                                     name='bulkDensity'
                                     value={dataSediment.bulkDensity}
+                                    required
                                 >
                                     Bulk Density
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </Input>
                                 {/* <Input
                                     wide='w-5/6'
@@ -296,6 +324,9 @@ export default function CalcSediment() {
                                 <div className='flex flex-col mb-3'>
                                     <label className='font-poppins text-white text-sm mb-2'>
                                         % C Organic
+                                        <span className='text-red-600 text-lg ml-1'>
+                                            *
+                                        </span>
                                     </label>
                                     <input
                                         className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
@@ -308,6 +339,7 @@ export default function CalcSediment() {
                                         //         : 0
                                         // }
                                         value={dataSediment.cOrganic}
+                                        required
                                     />
                                 </div>
                                 <div className='flex gap-3'>
@@ -357,12 +389,16 @@ export default function CalcSediment() {
                             <div className='flex flex-col mb-3'>
                                 <label className='font-poppins text-white text-sm mb-2'>
                                     Soil carbon density
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </label>
                                 <input
                                     className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
                                     type='number'
                                     name='soilCarbonDensity'
                                     value={dataSediment.soilCarbonDensity}
+                                    required
                                 />
                             </div>
                             <Input
@@ -371,8 +407,12 @@ export default function CalcSediment() {
                                 type='number'
                                 name='thicknessInterval'
                                 placeholder='Input thickness interval'
+                                required
                             >
                                 Thickness interval
+                                <span className='text-red-600 text-lg ml-1'>
+                                    *
+                                </span>
                             </Input>
                             <div className='flex gap-3'>
                                 <Button

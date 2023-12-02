@@ -284,12 +284,16 @@ export default function CalcTree() {
                                     className='font-poppins text-white text-sm'
                                 >
                                     Species
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </label>
                                 <select
                                     id='species'
                                     name='species'
                                     className='p-1 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-300 font-poppins text-sm shadow-md'
                                     onChange={changeSpecies}
+                                    required
                                 >
                                     <option value={undefined}>
                                         Select Species
@@ -307,12 +311,16 @@ export default function CalcTree() {
                                     htmlFor='stationCode'
                                 >
                                     Station Code
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </label>
                                 <input
                                     className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
                                     type='text'
                                     name='stationCode'
                                     placeholder='Input Station Code'
+                                    required
                                 />
                             </div>
                             <Input
@@ -321,6 +329,7 @@ export default function CalcTree() {
                                 type='text'
                                 name='diameter'
                                 placeholder='Input diamter of tree'
+                                required
                             >
                                 Diameter at Breast Height (DBH)
                                 <span className='text-red-600 text-lg ml-1'>
@@ -383,6 +392,9 @@ export default function CalcTree() {
                                     className='font-poppins text-white text-sm'
                                 >
                                     Species
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </label>
                                 <select
                                     id='species'
@@ -394,6 +406,7 @@ export default function CalcTree() {
                                     }
                                     className='p-1 rounded-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-300 font-poppins text-sm shadow-md'
                                     onChange={changeSpecies}
+                                    required
                                 >
                                     <option>Select Species</option>
                                     {listOfSpecies.map((value, index) => (
@@ -410,8 +423,12 @@ export default function CalcTree() {
                                 name='agb'
                                 value={result.agb != null ? result.agb : ''}
                                 placeholder='Input value AGB'
+                                required
                             >
                                 Above Ground Biomass (AGB)
+                                <span className='text-red-600 text-lg ml-1'>
+                                    *
+                                </span>
                             </Input>
                             <Input
                                 wide='w-5/6'
@@ -420,8 +437,12 @@ export default function CalcTree() {
                                 name='bgb'
                                 value={result.bgb != null ? result.bgb : ''}
                                 placeholder='Input value BGB'
+                                required
                             >
                                 Below Ground Biomass (BGB)
+                                <span className='text-red-600 text-lg ml-1'>
+                                    *
+                                </span>
                             </Input>
                             <Button bgButton='bg-mrv-red' type='submit'>
                                 Calculate
@@ -478,6 +499,9 @@ export default function CalcTree() {
                                     htmlFor='stationCode'
                                 >
                                     Station Code
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </label>
                                 {/* <input
                                     className="rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md"
@@ -492,11 +516,15 @@ export default function CalcTree() {
                                     name='stationCode'
                                     className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
                                     placeholder='Input Station Code'
+                                    required
                                 />
                             </div>
                             <div className='flex flex-col mb-3'>
                                 <label className='font-poppins text-white text-sm mb-2'>
                                     Carbon Content of Tree
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
                                 </label>
                                 <input
                                     className='rounded-md p-2 focus:outline-none focus:ring-4 transition-all duration-300 font-poppins text-sm shadow-md'
@@ -509,6 +537,7 @@ export default function CalcTree() {
                                             : ''
                                     }
                                     onChange={onCarbonArea}
+                                    required
                                 />
                                 {parseData != null ? (
                                     <Button
@@ -591,6 +620,9 @@ export default function CalcTree() {
                                 onChange={onCarbonArea}
                             >
                                 Area Of Plot
+                                <span className='text-red-600 text-lg ml-1'>
+                                    *
+                                </span>
                             </Input>
                             <Button
                                 bgButton='bg-mrv-red'
