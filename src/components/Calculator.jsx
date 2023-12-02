@@ -18,7 +18,7 @@ export default function Calculator() {
     return (
         <div id='calculator' className='my-10'>
             <h2 className='text-center font-poppins font-semibold text-slate-800 text-xl'>
-                Lets check your Carbon!
+                Let&#8216;s check your Carbon!
             </h2>
             {/*============= Button Swicth =============*/}
             <div className='flex gap-10 justify-center p-8 border-b-4 border-b-mrv-sky-200 w-80 mx-auto'>
