@@ -507,7 +507,10 @@ export default function CalcSediment() {
                                 </Button>
                                 <Button
                                     bgButton='bg-mrv-red'
-                                    onClick={() => localStorage.clear()}
+                                    onClick={() => {
+                                        setFinalData([]);
+                                        localStorage.clear();
+                                    }}
                                 >
                                     Reset
                                 </Button>
