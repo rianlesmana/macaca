@@ -336,15 +336,40 @@ export default function CalcTree() {
                                     *
                                 </span>
                             </Input>
-                            <Input
-                                wide='w-5/6'
-                                unit='m'
-                                type='text'
-                                name='height'
-                                placeholder='Input height of tree'
-                            >
-                                Height (H)
-                            </Input>
+
+                            {result.species != 'Rhizophora mucronata' ? (
+                                ''
+                            ) : (
+                                <Input
+                                    wide='w-5/6'
+                                    unit='m'
+                                    type='text'
+                                    name='height'
+                                    placeholder='Input height of tree'
+                                >
+                                    Height (H)
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
+                                </Input>
+                            )}
+
+                            {result.species != 'Rhizophora stylosa' ? (
+                                ''
+                            ) : (
+                                <Input
+                                    wide='w-5/6'
+                                    unit='m'
+                                    type='text'
+                                    name='height'
+                                    placeholder='Input height of tree'
+                                >
+                                    Height (H)
+                                    <span className='text-red-600 text-lg ml-1'>
+                                        *
+                                    </span>
+                                </Input>
+                            )}
                             <Button bgButton='bg-mrv-red' type='submit'>
                                 Calculate
                             </Button>
