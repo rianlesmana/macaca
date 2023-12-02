@@ -302,11 +302,12 @@ export default function CalcSediment() {
                                         type='text'
                                         name='cOrganic'
                                         placeholder='Input % C Organic'
-                                        value={
-                                            dataSediment.cOrganic != 0
-                                                ? dataSediment.cOrganic
-                                                : ''
-                                        }
+                                        // value={
+                                        //     dataSediment.cOrganic != 0
+                                        //         ? dataSediment.cOrganic
+                                        //         : 0
+                                        // }
+                                        value={dataSediment.cOrganic}
                                     />
                                 </div>
                                 <div className='flex gap-3'>

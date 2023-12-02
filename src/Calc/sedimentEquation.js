@@ -1,5 +1,5 @@
-function bulkDensity(g, r, h) {
-    const volume = 0.14 * r * h;
+function bulkDensity(g, d, h) {
+    const volume = 0.14 * (d * 0.5) ** 2 * h;
     const density = g / Number(volume);
 
     return Number(density);
